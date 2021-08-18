@@ -27,7 +27,7 @@ public class DeliveryCard {
 
     @Test
     void positiveTest1() {
-        $("[data-test-id=city] input").setValue("Киров");
+        $("[data-test-id=city] input").setValue("иров");
         String date = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[data-test-id=date] input").doubleClick();
         $("[data-test-id=date] input").sendKeys(Keys.DELETE);
